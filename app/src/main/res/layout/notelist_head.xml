@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ll_noteList_head"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_noteList_titleFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="left|center_vertical"
+        >
+
+        <ImageButton
+            android:id="@+id/ib_noteList_addNewEntry"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/plus"
+            android:tint="@color/grey" />
+
+        <Button
+            android:id="@+id/bt_noteList_addNewEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newNoteWithDots"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/bt_noteList_sort"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/up_and_down_arrows"
+            android:tint="@color/grey"
+            android:padding="15dp"
+            android:scaleType="centerCrop"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <ImageButton
+            android:id="@+id/bt_noteList_filter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/filter"
+            android:tint="@color/grey"
+            android:padding="15dp"
+            android:scaleType="centerCrop"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Note me</string>
+    
+    <string name="action_settings">Settings</string>
+    <string name="action_color">Choose color</string>
+
+    <string name="title_activity_noteListOverview">Overview</string>
+    <string name="title_activity_noteList">List view</string>
+    <string name="title_activity_noteListSettings">Note list settings</string>
+    <string name="title_activity_note_details">Note details</string>
+
+    <string name="title_activity_appSettings">Settings</string>
+    <string name="title_activity_helpFeedback">Help &amp; Feedback</string>
+    <string name="title_activity_about">About</string>
+
+    <string name="emptyTextHint">Text was empty</string>
+
+    <string name="goToOverview">Go to overview</string>
+
+    <string name="newListWithDots">new list ...</string>
+    <string name="newNoteWithDots">new note ...</string>
+    <string name="newList">new list</string>
+
+
+    <string name="blue"  >Blue</string>
+    <string name="cyan"  >Cyan</string>
+    <string name="green" >Green</string>
+    <string name="pink"  >Pink</string>
+    <string name="red"   >Red</string>
+    <string name="white" >White</string>
+    <string name="yellow">Yellow</string>
+
+    <string name="prio_low">Low</string>
+    <string name="prio_medium">Medium</string>
+    <string name="prio_high">High</string>
+    <string name="prio_critical">Critical</string>
+
+    <string name="sortOverview">Sort overview</string>
+    <string name="sortList">Sort list</string>
+    <string name="filterList">Filter list</string>
+
+    <string name="dateCreated">Date created</string>
+    <string name="dateCreatedReverse">Date created (reverse)</string>
+    <string name="title">Title</string>
+    <string name="titleReverse">Title (reverse)</string>
+
+    <string name="alphabetically">alphabetically</string>
+    <string name="alphabeticallyReverse">alphabetically (reverse)</string>
+    <string name="lastEditedTop">Last edited top</string>
+    <string name="lastEditedBottom">Last edited bottom</string>
+
+    <string name="checkedFirst">Checked first</string>
+    <string name="uncheckedFirst">Unchecked first</string>
+    <string name="customOrder">Custom order</string>
+
+    <string name="checked">Checked</string>
+    <string name="unchecked">Unchecked</string>
+
+
+
+    <string name="titleStyle">Title style</string>
+    <string name="titleStyleEditText">Click (edit title)</string>
+    <string name="titleStyleDropdown">Dropdown (switch between note lists)</string>
+
+    <string name="navigationDrawerOpen">Open navigation drawer</string>
+    <string name="navigationDrawerClose">Close navigation drawer</string>
+
+    <string name="about_copyright">Copyright</string>
+    <string name="about_termsOfUse">Terms of use</string>
+    <string name="about_privacyPolicy">Privacy policy</string>
+    <string name="about_imprint">Imprint</string>
+
+    <string name="about_versionInfo">Version %1$s\nYou are up to date. %2$s</string>
+
+    <string name="localUser">local user</string>
+    <string name="noFilter">No filter</string>
+
+    <string name="noteDetails_title_parentList">Note list</string>
+    <string name="noteDetails_title_priority">Priority</string>
+    <string name="noteDetails_title_moreInfo">Description</string>
+    <string name="noteDetails_title_tags">Tags</string>
+    <string name="noteDetails_title_reminderDate">Alarm</string>
+    <string name="noteDetails_title_reminderLocation">Location service</string>
+    
+    <string name="noteDetails_description_parentList">Set parent note list.</string>
+    <string name="noteDetails_description_priority">Set priority to enable sorting by priority.</string>
+    <string name="noteDetails_description_moreInfo">Leave further info for more details.</string>
+    <string name="noteDetails_description_tags">Set tags to enable search by tags.</string>
+    <string name="noteDetails_description_reminderDate">Set reminder date.</string>
+    <string name="noteDetails_description_reminderLocation">Get notifications when arriving at specified location.</string>
+
+
+    <string name="storageType_file">Internal file storage</string>
+    <string name="storageType_sd_card">SD-Card file storage</string>
+    <string name="storageType_database">Internal database</string>
+    <string name="storageType_cloud">CLOUD</string>
+
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="storage_deleteContent">Alle Daten löschen</string>
+    <string name="storage_deleteContentConfirmation">Alle Daten entgültig löschen?</string>
+
+</resources>

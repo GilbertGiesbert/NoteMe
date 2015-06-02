@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_activity_noteList"
+    >
+
+    <!-- note list header (title + 'addNewNote' button) -->
+    <include layout="@layout/notelist_head" />
+
+    <!-- note list items -->
+    <com.mediaworx.noteme.common.dragdrop.DragDropListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

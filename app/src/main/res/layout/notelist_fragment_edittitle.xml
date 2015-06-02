@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    >
+
+    <!-- field for read mode -->
+    <Button
+        android:id="@+id/bt_noteList_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        style="?android:attr/borderlessButtonStyle"
+         />
+
+    <!-- fields for edit mode (hidden at start up) -->
+    <EditText
+        android:id="@+id/et_noteList_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+    <ImageButton
+        android:id="@+id/ib_noteList_title_confirm"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hook"
+        android:tint="@color/grey"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

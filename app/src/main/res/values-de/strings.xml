@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+    <string name="storageType_file">Dateiensystem</string>
+    <string name="storageType_sd_card">SD-CARD</string>
+    <string name="storageType_database">Datenbank</string>
+    <string name="storageType_cloud">CLOUD</string>
+
+
+</resources>

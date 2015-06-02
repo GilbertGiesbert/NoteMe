@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediaworx.noteme" >
+
+    <application
+        android:name=".common.application.App"
+        android:allowBackup="true"
+        android:icon="@drawable/hook"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- activity for note list overview screen (currently home screen) -->
+        <activity
+            android:name=".notelist.activity.NoteListOverviewActivity"
+            android:label="@string/title_activity_noteListOverview" >
+            <intent-filter android:label="@string/app_name" >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- activity for single note list -->
+        <activity
+            android:name=".notelist.activity.NoteListActivity"
+            android:label="@string/title_activity_noteList"
+            android:parentActivityName=".notelist.activity.NoteListOverviewActivity" >
+
+            <!-- The meta-data element is needed for versions lower than 4.1=sdk16 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".notelist.activity.NoteListOverviewActivity" />
+        </activity>
+
+        <!-- settings for note list activities -->
+        <activity
+            android:name=".notelist.activity.NoteListSettingsActivity"
+            android:label="@string/title_activity_noteListSettings"
+            android:parentActivityName=".notelist.activity.NoteListActivity" >
+
+            <!-- The meta-data element is needed for versions lower than 4.1=sdk16 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".notelist.activity.NoteListActivity" />
+        </activity>
+
+        <!-- activity for app settings -->
+        <activity
+            android:name=".settings.AppSettingsActivity"
+            android:label="@string/title_activity_appSettings"
+            android:parentActivityName=".notelist.activity.NoteListOverviewActivity" >
+
+            <!-- The meta-data element is needed for versions lower than 4.1=sdk16 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".notelist.activity.NoteListOverviewActivity" />
+        </activity>
+
+        <!-- activity for help and feedback -->
+        <activity
+            android:name=".helpfeedback.HelpFeedbackActivity"
+            android:label="@string/title_activity_helpFeedback"
+            android:parentActivityName=".notelist.activity.NoteListOverviewActivity" >
+
+            <!-- The meta-data element is needed for versions lower than 4.1=sdk16 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".notelist.activity.NoteListOverviewActivity" />
+        </activity>
+
+        <!-- activity for app settings -->
+        <activity
+            android:name=".about.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".notelist.activity.NoteListOverviewActivity" >
+
+            <!-- The meta-data element is needed for versions lower than 4.1=sdk16 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".notelist.activity.NoteListOverviewActivity" />
+        </activity>
+
+
+
+        <!--<provider-->
+            <!--android:name=".CustomProvider"-->
+            <!--android:authorities="com.example.app.provider"-->
+            <!--android:exported="false"-->
+            <!--android:multiprocess="true" >-->
+        <!--</provider>-->
+
+
+        <!-- activity for app settings -->
+        <activity
+            android:name=".notedetails.NoteDetailsActivity"
+            android:label="@string/title_activity_note_details"
+            android:parentActivityName=".notelist.activity.NoteListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mediaworx.noteme.notelist.activity.NoteListActivity" />
+        </activity>
+    </application>
+
+</manifest>

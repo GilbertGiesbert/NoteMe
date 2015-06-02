@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_noteDetails_noteText"
+        style="@style/noteDetails_itemDescription"
+        android:layout_gravity="center"
+        android:textStyle="italic|bold"
+         />
+
+    <TextView
+        style="@style/noteDetails_itemTitle"
+        android:text="@string/noteDetails_title_parentList" />
+    <TextView
+        style="@style/noteDetails_itemDescription"
+        android:text="@string/noteDetails_description_parentList" />
+    <LinearLayout
+        android:id="@+id/ll_placeholder_dropdown_parentlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+    <View style="@style/noteDetails_itemDivider" />
+
+
+    <TextView
+        style="@style/noteDetails_itemTitle"
+        android:text="@string/noteDetails_title_priority" />
+    <TextView
+        style="@style/noteDetails_itemDescription"
+        android:text="@string/noteDetails_description_priority" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prio_low"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+        <SeekBar
+            android:id="@+id/sb_noteDetails_priority"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prio_critical"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+        </LinearLayout>
+
+    <View style="@style/noteDetails_itemDivider" />
+
+
+    <TextView
+        style="@style/noteDetails_itemTitle"
+        android:text="@string/noteDetails_title_moreInfo" />
+    <TextView
+        style="@style/noteDetails_itemDescription"
+        android:text="@string/noteDetails_description_moreInfo" />
+    <View style="@style/noteDetails_itemDivider" />
+
+
+    <TextView
+        style="@style/noteDetails_itemTitle"
+        android:text="@string/noteDetails_title_tags" />
+    <TextView
+        style="@style/noteDetails_itemDescription"
+        android:text="@string/noteDetails_description_tags" />
+    <View style="@style/noteDetails_itemDivider" />
+
+
+    <TextView
+        style="@style/noteDetails_itemTitle"
+        android:text="@string/noteDetails_title_reminderDate" />
+    <TextView
+        style="@style/noteDetails_itemDescription"
+        android:text="@string/noteDetails_description_reminderDate" />
+    <View style="@style/noteDetails_itemDivider" />
+
+
+    <TextView
+        style="@style/noteDetails_itemTitle"
+        android:text="@string/noteDetails_title_reminderLocation" />
+    <TextView
+        style="@style/noteDetails_itemDescription"
+        android:text="@string/noteDetails_description_reminderLocation" />
+
+</LinearLayout>

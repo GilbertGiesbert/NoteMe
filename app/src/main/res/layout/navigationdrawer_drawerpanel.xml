@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_navigationView"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <!-- profile segment -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_navigationDrawer_profile_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/profilepicture_background" />
+
+        <ImageView
+            android:id="@+id/iv_navigationDrawer_profile_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="15dp"
+            android:src="@drawable/profile"
+            android:tint="@color/grey"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/tv_navigationDrawer_profile_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/localUser"
+
+            android:layout_toRightOf="@+id/iv_navigationDrawer_profile_image"
+            android:layout_toEndOf="@+id/iv_navigationDrawer_profile_image"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="20dp" />
+
+    </RelativeLayout>
+
+    <!-- navigation list -->
+    <ListView
+        android:id="@+id/lv_navigationDrawer_list"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/profilepicture_background"
+        android:dividerHeight="1dp"
+        />
+
+</LinearLayout>

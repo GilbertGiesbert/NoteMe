@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingLeft="15dp"
+    >
+
+    <CheckBox
+        android:id="@+id/cb_entry_selected_editmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+    <EditText
+        android:id="@+id/et_entry_text_editmode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <ImageButton
+        android:id="@+id/ib_entry_confirm"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/hook"
+        android:tint="@color/grey"
+        android:padding="15dp"
+        android:scaleType="centerCrop"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <ImageButton
+        android:id="@+id/ib_entry_details"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/gear"
+        android:tint="@color/grey"
+        android:padding="15dp"
+        android:scaleType="centerCrop"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <ImageButton
+        android:id="@+id/ib_entry_delete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/trash_can"
+        android:tint="@color/grey"
+        android:padding="15dp"
+        android:scaleType="centerCrop"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+</LinearLayout>
